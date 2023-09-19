@@ -163,7 +163,7 @@ jobs:
                   echo "CYPRESS_RUST_CRYPTO=1" >> "$GITHUB_ENV"
 
             - name: Run Cypress tests
-              uses: cypress-io/github-action@2558ee6af05072a19de2ce92cb68b38616132726
+              uses: cypress-io/github-action@0b0a8fea44dd52927b6673c23244c86fa5d6e395
               with:
                   working-directory: matrix-react-sdk
                   # The built-in Electron runner seems to grind to a halt trying to run the tests, so use chrome.
