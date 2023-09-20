@@ -105,6 +105,7 @@ const MessageComposerButtons: React.FC<IProps> = (props: IProps) => {
                 emojiButton(props)
             ),
             uploadButton(), // props passed via UploadButtonContext
+            testButton(),
         ];
         moreButtons = [
             showStickersButton(props),
@@ -163,6 +164,10 @@ function emojiButton(props: IProps): ReactElement {
 
 function uploadButton(): ReactElement {
     return <UploadButton key="controls_upload" />;
+}
+
+function testButton(): ReactElement {
+    return <UploadButton key="controls_upload_2" />;
 }
 
 type UploadButtonFn = () => void;
